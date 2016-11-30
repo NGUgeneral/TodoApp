@@ -1,0 +1,720 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:OsaulenkoEgor_Diceus_Test.Assets">
+    <!-- Colors -->
+    <Color x:Key="BlueHighlight">#5CD8FF</Color>
+    <Color x:Key="BlueLight">#2380FF</Color>
+    <Color x:Key="Blue">#005095</Color>
+    <Color x:Key="BlueDark">#0C3E68</Color>
+    <Color x:Key="White">#ffffff</Color>
+    <Color x:Key="Black">#000000</Color>
+    <Color x:Key="GrayLight">#DADADA</Color>
+    <Color x:Key="GrayMenu">#F0F0F0</Color>
+    <Color x:Key="Gray">#929497</Color>
+    <Color x:Key="GrayDark">#525354</Color>
+    <Color x:Key="Red">#FF2340</Color>
+    <Color x:Key="RedHighlight">#EC2031</Color>
+    <Color x:Key="RedDark">#BE2230</Color>
+    <SolidColorBrush x:Key="BlueHighlightBrush" Color="{StaticResource BlueHighlight}" />
+    <SolidColorBrush x:Key="BlueLightBrush" Color="{StaticResource BlueLight}" />
+    <SolidColorBrush x:Key="BlueBrush" Color="{StaticResource Blue}" />
+    <SolidColorBrush x:Key="BlueDarkBrush" Color="{StaticResource BlueDark}"/>
+    <SolidColorBrush x:Key="BlueLightFadedBrush" Color="{StaticResource BlueLight}" Opacity="0.2"/>
+    <SolidColorBrush x:Key="BlueFadedBrush" Color="{StaticResource Blue}" Opacity="0.4"/>
+    <SolidColorBrush x:Key="BlueDarkFadedBrush" Color="{StaticResource BlueDark}" Opacity="0.4"/>
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource White}"/>
+    <SolidColorBrush x:Key="WhiteFadedBrush" Color="{StaticResource White}" Opacity="0.4" />
+    <SolidColorBrush x:Key="BlackBrush" Color="{StaticResource Black}"/>
+    <SolidColorBrush x:Key="BlackShadowBrush" Color="{StaticResource Black}" Opacity="0.1" />
+    <SolidColorBrush x:Key="BlackFadedBrush" Color="{StaticResource Black}" Opacity="0.4" />
+    <SolidColorBrush x:Key="GrayLightBrush" Color="{StaticResource GrayLight}"/>
+    <SolidColorBrush x:Key="GrayMenuBrush" Color="{StaticResource GrayMenu}"/>
+    <SolidColorBrush x:Key="GrayBrush" Color="{StaticResource Gray}"/>
+    <SolidColorBrush x:Key="GrayDarkBrush" Color="{StaticResource GrayDark}" />
+    <SolidColorBrush x:Key="GrayFadedBrush" Color="{StaticResource Gray}" Opacity="0.4" />
+    <SolidColorBrush x:Key="GrayDarkFadedBrush" Color="{StaticResource GrayDark}" Opacity="0.4" />
+    <SolidColorBrush x:Key="RedHighlightBrush" Color="{StaticResource RedHighlight}"/>
+    <SolidColorBrush x:Key="RedBrush" Color="{StaticResource Red}"/>
+    <SolidColorBrush x:Key="RedDarkBrush" Color="{StaticResource RedDark}"/>
+    <SolidColorBrush x:Key="RedFadedBrush" Color="{StaticResource Red}" Opacity="0.4"/>
+    <SolidColorBrush x:Key="ScrollButton" Color="{StaticResource GrayLight}" />
+    <SolidColorBrush x:Key="ScrollBG" Color="{StaticResource GrayLight}" />
+    <SolidColorBrush x:Key="ScrollThumb" Color="{StaticResource Gray}" />
+    <!-- Labels and Texts -->
+    <Style x:Key="LabelDataGridHeader" TargetType="Label">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="{StaticResource GrayDarkBrush}" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Padding" Value="10,0,10,0" />
+    </Style>
+    <Style x:Key="TextBlockPlainGray" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource GrayDarkBrush}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+    <Style x:Key="TextBlockWatermark" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource GrayLightBrush}" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin" Value="10,0,0,0" />
+        <Setter Property="IsHitTestVisible" Value="False" />
+    </Style>
+    <Style x:Key="MenuLink" TargetType="Label">
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Margin" Value="20,0,0,0" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="DockPanel.Dock" Value="Top" />
+        <Setter Property="Foreground" Value="{StaticResource GrayDarkBrush}" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsMouseOver}" Value="True">
+                <Setter Property="Foreground" Value="{StaticResource BlueBrush}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    <!-- Buttons  -->
+    <Style x:Key="Button" TargetType="{x:Type Button}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="MinWidth" Value="100" />
+        <Setter Property="Width" Value="Auto" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Padding" Value="10,0,10,0" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+    </Style>
+    <Style x:Key="ButtonWhite" TargetType="{x:Type Button}" BasedOn="{StaticResource Button}">
+        <Setter Property="Background" Value="White" />
+        <Setter Property="BorderBrush" Value="{StaticResource BlueBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="{StaticResource BlueBrush}" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Name="Chrome"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="true">
+                        <ContentPresenter Name="Presenter" 
+                                          Margin="{TemplateBinding Padding}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{StaticResource BlueBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource BlueBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource BlueDarkBrush}" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{StaticResource BlueDarkBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource BlueDarkBrush}" />
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ButtonBlue" TargetType="{x:Type Button}" BasedOn="{StaticResource Button}">
+        <Setter Property="Background" Value="{StaticResource BlueDarkBrush}" />
+        <Setter Property="BorderBrush" Value="White" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground" Value="{StaticResource WhiteBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Name="Chrome"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="true">
+                        <ContentPresenter Name="Presenter" 
+                                          Margin="{TemplateBinding Padding}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{StaticResource WhiteBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{StaticResource BlueBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource WhiteBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource WhiteBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="{StaticResource BlueDarkBrush}" />
+                            <Setter Property="BorderBrush" Value="{StaticResource WhiteBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource WhiteBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="IconButtonStyle"
+               TargetType="{x:Type Button}">
+        <!-- set some default values -->
+        <Setter Property="Background"
+                Value="Transparent" />
+        <Setter Property="BorderBrush"
+                Value="Transparent" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <!-- set the visual tree of the control -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!-- here come the actual sub-controls -->
+                    <Border x:Name="border"
+                            Height="{TemplateBinding Height}"
+                            Width="{TemplateBinding Width}"
+                            SnapsToDevicePixels="True"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="0"
+                            Padding="0"
+                            CornerRadius="0,0,0,0">
+                        <Border x:Name="innerBorder"
+                                SnapsToDevicePixels="True"
+                                BorderThickness="1"
+                                Padding="2"
+                                CornerRadius="0,0,0,0">
+                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              RecognizesAccessKey="True"
+                                              Margin="{TemplateBinding Padding}">
+                                <ContentPresenter.Effect>
+                                    <!-- give the content a bit of shadow -->
+                                    <DropShadowEffect x:Name="shadow"
+                                                      ShadowDepth="0"
+                                                      Opacity="0.7"
+                                                      BlurRadius="0" />
+                                </ContentPresenter.Effect>
+                                <ContentPresenter.RenderTransform>
+                                    <!-- push the content a bit to the left and the top -->
+                                    <TranslateTransform x:Name="translation"
+                                                        X="0"
+                                                        Y="0" />
+                                </ContentPresenter.RenderTransform>
+                            </ContentPresenter>
+                        </Border>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <!--the triggers define the reactions to various state changes-->
+                        <Trigger Property="IsKeyboardFocused"
+                                 Value="true">
+                            <Setter TargetName="innerBorder"
+                                    Property="BorderBrush"
+                                    Value="Transparent" />
+                            <Setter Property="Background"
+                                    Value="Transparent" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver"
+                                 Value="true">
+                            <Setter Property="Background"
+                                    Value="Transparent" />
+                        </Trigger>
+                        <!-- when the control is disabled, just let the background shine through -->
+                        <Trigger Property="IsEnabled"
+                                 Value="false">
+                            <Setter Property="Opacity"
+                                    Value="0.5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed"
+                                 Value="True">
+                            <!-- This Trigger manages the Animation of the button's content and its shadow -->
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0"
+                                                          To="0"
+                                                          Storyboard.TargetName="shadow"
+                                                          Storyboard.TargetProperty="(DropShadowEffect.ShadowDepth)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.X)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.Y)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="shadow"
+                                                         Storyboard.TargetProperty="(DropShadowEffect.ShadowDepth)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.X)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.Y)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="windowIconButtonStyle"
+           TargetType="{x:Type Button}">
+        <!-- set some default values -->
+        <Setter Property="Background"
+                Value="Transparent" />
+        <Setter Property="BorderBrush"
+                Value="Transparent" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <!-- set the visual tree of the control -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!-- here come the actual sub-controls -->
+                    <Border x:Name="border"
+                            Height="{TemplateBinding Height}"
+                            Width="{TemplateBinding Width}"
+                            SnapsToDevicePixels="True"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1"
+                            Padding="0"
+                            CornerRadius="0,0,0,0">
+                        <Border x:Name="innerBorder"
+                                SnapsToDevicePixels="True"
+                                BorderThickness="1"
+                                Padding="2"
+                                CornerRadius="0,0,0,0">
+                            <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              RecognizesAccessKey="True"
+                                              Margin="{TemplateBinding Padding}">
+                                <ContentPresenter.Effect>
+                                    <!-- give the content a bit of shadow -->
+                                    <DropShadowEffect x:Name="shadow"
+                                                      ShadowDepth="0"
+                                                      Opacity="0.7"
+                                                      BlurRadius="0" />
+                                </ContentPresenter.Effect>
+                                <ContentPresenter.RenderTransform>
+                                    <!-- push the content a bit to the left and the top -->
+                                    <TranslateTransform x:Name="translation"
+                                                        X="0"
+                                                        Y="0" />
+                                </ContentPresenter.RenderTransform>
+                            </ContentPresenter>
+                        </Border>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <!-- 
+                                the triggers define the reactions to various state
+                                changes
+                            -->
+                        <Trigger Property="IsKeyboardFocused"
+                                 Value="true">
+                            <Setter TargetName="innerBorder"
+                                    Property="BorderBrush"
+                                    Value="Transparent" />
+                            <Setter Property="Background"
+                                    Value="Transparent" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver"
+                                 Value="true">
+                            <Setter Property="Background"
+                                    Value="{StaticResource BlueDarkBrush}" />
+                        </Trigger>
+                        <!-- when the control is disabled, just let the background shine through -->
+                        <Trigger Property="IsEnabled"
+                                 Value="false">
+                            <Setter Property="Opacity"
+                                    Value="0.5" />
+                        </Trigger>
+                        <Trigger Property="IsPressed"
+                                 Value="True">
+                            <!-- This Trigger manages the Animation of the button's content and its shadow -->
+                            <Trigger.EnterActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="shadow"
+                                                         Storyboard.TargetProperty="(DropShadowEffect.ShadowDepth)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.X)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.Y)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.EnterActions>
+                            <Trigger.ExitActions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="shadow"
+                                                         Storyboard.TargetProperty="(DropShadowEffect.ShadowDepth)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.X)" />
+                                        <DoubleAnimation Duration="0:0:0"
+                                                         To="0"
+                                                         Storyboard.TargetName="translation"
+                                                         Storyboard.TargetProperty="(TranslateTransform.Y)" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </Trigger.ExitActions>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--DataGrid-->
+    <Style x:Key="DataGrid" TargetType="{x:Type DataGrid}">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="SelectionMode" Value="Single" />
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="GridLinesVisibility" Value="None"/>
+        <Setter Property="CanUserAddRows" Value="False" />
+        <Setter Property="CanUserReorderColumns" Value="False" />
+        <Setter Property="AutoGenerateColumns" Value="False" />
+        <Setter Property="CanUserDeleteRows" Value="False" />
+        <Setter Property="CanUserResizeRows" Value="False" />
+        <Setter Property="CanUserResizeColumns" Value="False" />
+        <Setter Property="RowHeaderWidth" Value="0" />
+        <Setter Property="RowStyle" Value="{DynamicResource DataGridRow}"/>
+        <Setter Property="ColumnHeaderStyle" Value="{DynamicResource DataGridHeader}" />
+        <Style.Resources>
+            <Style TargetType="DataGridCell">
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+    <Style x:Key="DataGridRow" TargetType="{x:Type DataGridRow}">
+        <Setter Property="BorderBrush" Value="{StaticResource GrayLightBrush}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+        <Style.Resources>
+            <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{StaticResource GrayMenu}" />
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="Transparent" />
+            <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="Transparent" />
+        </Style.Resources>
+    </Style>
+    <Style x:Key="DataGridHeader" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="VerticalContentAlignment" Value="Top" />
+        <Setter Property="Padding" Value="0,10,10,10" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Foreground" Value="{StaticResource BlueBrush}" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+    <!-- Textbox -->
+    <Style x:Key="InboxBlue" TargetType="TextBox">
+        <Setter Property="BorderBrush" Value="{StaticResource BlueBrush}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Foreground" Value="{StaticResource GrayDarkBrush}" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Padding" Value="5,0,0,0" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Width" Value="150" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="TextWrapping" Value="NoWrap" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                    <Border Background="{TemplateBinding Background}" 
+                            x:Name="Bd"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="0">
+                        <ScrollViewer x:Name="PART_ContentHost"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
+                            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                        </Trigger>
+                        <Trigger Property="Width" Value="Auto">
+                            <Setter Property="MinWidth" Value="100"/>
+                        </Trigger>
+                        <Trigger Property="Height" Value="Auto">
+                            <Setter Property="MinHeight" Value="20"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="InboxGray" TargetType="TextBox" BasedOn="{StaticResource InboxBlue}">
+        <Setter Property="BorderBrush" Value="{StaticResource GrayBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    </Style>
+    <Style x:Key="InboxGrayHigh" TargetType="TextBox" BasedOn="{StaticResource InboxGray}">
+        <Setter Property="Height" Value="35" />
+        <Setter Property="Background" Value="Transparent" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=IsFocused}" Value="True">
+                <Setter Property="Background" Value="{StaticResource GrayMenuBrush}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="InboxGrayRich" TargetType="RichTextBox">
+        <Setter Property="BorderBrush" Value="{StaticResource BlueBrush}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="Foreground" Value="{StaticResource GrayDarkBrush}" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Padding" Value="5,0,0,0" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Width" Value="150" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                    <Border Background="{TemplateBinding Background}" 
+                            x:Name="Bd"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="0">
+                        <ScrollViewer x:Name="PART_ContentHost"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
+                            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                        </Trigger>
+                        <Trigger Property="Width" Value="Auto">
+                            <Setter Property="MinWidth" Value="100"/>
+                        </Trigger>
+                        <Trigger Property="Height" Value="Auto">
+                            <Setter Property="MinHeight" Value="20"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!-- Customized Datepicker -->
+    <Style x:Key="DatePicker" TargetType="{x:Type DatePicker}">
+        <Setter Property="Foreground" Value="{StaticResource GrayDarkBrush}" />
+        <Setter Property="Focusable" Value="True" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="VerticalContentAlignment" Value="Top" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="IsTodayHighlighted" Value="True" />
+        <Setter Property="SelectedDateFormat" Value="Short" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="BorderBrush" Value="{StaticResource GrayBrush}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="Background" Value="Transparent" />
+        <!--Set CalendarStyle to DatePickerCalendarStyle.-->
+        <Setter Property="CalendarStyle" Value="{DynamicResource DatePickerCalendarStyle}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DatePicker}">
+                    <Border BorderThickness="{TemplateBinding BorderThickness}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            Padding="{TemplateBinding Padding}"
+                            Margin="{TemplateBinding Margin}"
+                            CornerRadius="0" >
+                        <Grid x:Name="PART_Root"
+                              Background="{TemplateBinding Background}"
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="PART_Button"                                     
+                                    Grid.Column="1"
+                                    Foreground="{TemplateBinding Foreground}"
+                                    Focusable="True"
+                                    HorizontalAlignment="Right"
+                                    Height="{TemplateBinding Height}"
+                                    VerticalAlignment="Center"
+                                    Margin="0"
+                                    Padding="0">
+                                <Button.Style>
+                                    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource IconButtonStyle}" >
+                                        <Setter Property="Background" Value="Transparent" />
+                                    </Style>
+                                </Button.Style>
+                                <Image Height="35" VerticalAlignment="Top" x:Name="btnIcon" Margin="0,5,10,5">
+                                    <Image.Style>
+                                        <Style TargetType="{x:Type Image}">
+                                            <Setter Property="Source" Value="/img/calendar.png"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding ElementName=PART_Button, Path=IsMouseOver}" Value="True">
+                                                    <Setter Property="Source" Value="/img/calendarHighlight.png"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Image.Style>
+                                </Image>
+                            </Button>
+                            <DatePickerTextBox x:Name="PART_TextBox"                                               
+                                                   Grid.Column="0"
+                                                   Foreground="{TemplateBinding Foreground}"
+                                                   Focusable="{TemplateBinding Focusable}"                                                   
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Stretch"
+                                               Height="{TemplateBinding Height}"
+                                                   VerticalContentAlignment="Center" 
+                                                   HorizontalContentAlignment="Left"
+                                                   Background="{TemplateBinding Background}">
+                                <!-- Watermark access -->
+                                <DatePickerTextBox.Style>
+                                    <Style TargetType="DatePickerTextBox">
+                                        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+                                        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+                                        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+                                        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type DatePickerTextBox}">
+                                                    <Grid>
+                                                        <Grid.Resources>
+                                                            <SolidColorBrush x:Key="WatermarkBrush" Color="{StaticResource GrayLight}"/>
+                                                        </Grid.Resources>
+                                                        <VisualStateManager.VisualStateGroups>
+                                                            <VisualStateGroup x:Name="CommonStates">
+                                                                <VisualStateGroup.Transitions>
+                                                                    <VisualTransition GeneratedDuration="0"/>
+                                                                    <VisualTransition GeneratedDuration="0:0:0.1" To="MouseOver"/>
+                                                                </VisualStateGroup.Transitions>
+                                                                <VisualState x:Name="Normal"/>
+                                                                <VisualState x:Name="MouseOver">
+                                                                    <Storyboard>
+                                                                        <ColorAnimation Duration="0" To="Transparent" Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="ContentElement"/>
+                                                                        <ColorAnimation Duration="0" To="Transparent" Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)" Storyboard.TargetName="watermark_decorator"/>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                            </VisualStateGroup>
+                                                            <VisualStateGroup x:Name="WatermarkStates">
+                                                                <VisualStateGroup.Transitions>
+                                                                    <VisualTransition GeneratedDuration="0"/>
+                                                                </VisualStateGroup.Transitions>
+                                                                <VisualState x:Name="Unwatermarked"/>
+                                                                <VisualState x:Name="Watermarked">
+                                                                    <Storyboard>
+                                                                        <DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ContentElement"/>
+                                                                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="PART_Watermark"/>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                            </VisualStateGroup>
+                                                            <VisualStateGroup x:Name="FocusStates">
+                                                                <VisualStateGroup.Transitions>
+                                                                    <VisualTransition GeneratedDuration="0"/>
+                                                                </VisualStateGroup.Transitions>
+                                                                <VisualState x:Name="Unfocused"/>
+                                                                <VisualState x:Name="Focused">
+                                                                    <Storyboard>
+                                                                        <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="FocusVisual"/>
+                                                                    </Storyboard>
+                                                                </VisualState>
+                                                            </VisualStateGroup>
+                                                        </VisualStateManager.VisualStateGroups>
+                                                        <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}"
+                                                                CornerRadius="1"
+                                                                Opacity="1"
+                                                                Padding="{TemplateBinding Padding}">
+                                                            <Grid x:Name="WatermarkContent" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                                                <Border x:Name="ContentElement" BorderBrush="#FFFFFFFF" BorderThickness="0"/>
+                                                                <Border x:Name="watermark_decorator" BorderBrush="#FFFFFFFF" BorderThickness="0">
+                                                                    <ContentControl x:Name="PART_Watermark" Focusable="False" IsHitTestVisible="False" Opacity="0" Padding="{TemplateBinding Padding}">
+                                                                        <ContentControl.Template>
+                                                                            <ControlTemplate>
+                                                                                <TextBlock Text="Execute date ... " Foreground="{StaticResource WatermarkBrush}"/>
+                                                                            </ControlTemplate>
+                                                                        </ContentControl.Template>
+                                                                    </ContentControl>
+                                                                </Border>
+                                                                <ScrollViewer x:Name="PART_ContentHost" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="0" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                                                <Border x:Name="FocusVisual" BorderBrush="#FF45D6FA" CornerRadius="1" IsHitTestVisible="False" Opacity="0"/>
+                                                            </Grid>
+                                                        </Border>
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </DatePickerTextBox.Style>
+                                <!-- Watermark access Ends -->
+                            </DatePickerTextBox>
+                            <Grid x:Name="PART_DisabledVisual"
+                                  Grid.ColumnSpan="2"
+                                  Grid.Column="0"
+                                  IsHitTestVisible="False"
+                                  Opacity="0"
+                                  Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Rectangle Grid.Column="0"
+                                        Fill="#A5FFFFFF"
+                                        RadiusY="1"
+                                        Grid.Row="0"
+                                        RadiusX="1" />
+                                <Rectangle Grid.Column="1"
+                                         Fill="#A5FFFFFF"
+                                         Height="18"
+                                         Margin="3,0,3,0"
+                                         RadiusY="1"
+                                         Grid.Row="0"
+                                         RadiusX="1"
+                                         Width="19" />
+                                <Popup x:Name="PART_Popup"                                       
+                                         AllowsTransparency="True"                                       
+                                         Placement="Bottom"
+                                         PlacementTarget="{Binding ElementName=PART_TextBox}"
+                                         StaysOpen="False" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,7 @@
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.Model\bin\Release\OsaulenkoEgor_Diceus_Test.Model.dll.config
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.Model\bin\Release\OsaulenkoEgor_Diceus_Test.Model.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.Model\bin\Release\OsaulenkoEgor_Diceus_Test.Model.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.Model\obj\Release\OsaulenkoEgor_Diceus_Test.Model.Properties.Resources.resources
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.Model\obj\Release\OsaulenkoEgor_Diceus_Test.Model.csproj.GenerateResource.Cache
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.Model\obj\Release\OsaulenkoEgor_Diceus_Test.Model.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.Model\obj\Release\OsaulenkoEgor_Diceus_Test.Model.pdb

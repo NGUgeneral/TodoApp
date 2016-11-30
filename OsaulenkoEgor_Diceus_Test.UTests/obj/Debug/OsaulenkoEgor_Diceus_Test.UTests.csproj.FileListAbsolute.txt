@@ -1,0 +1,10 @@
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\bin\Debug\OsaulenkoEgor_Diceus_Test.UTests.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\bin\Debug\OsaulenkoEgor_Diceus_Test.UTests.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\bin\Debug\OsaulenkoEgor_Diceus_Test.exe
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\bin\Debug\OsaulenkoEgor_Diceus_Test.Model.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\bin\Debug\OsaulenkoEgor_Diceus_Test.Model.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\bin\Debug\OsaulenkoEgor_Diceus_Test.pdb
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\obj\Debug\OsaulenkoEgor_Diceus_Test.UTests.csprojResolveAssemblyReference.cache
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\obj\Debug\OsaulenkoEgor_Diceus_Test.UTests.dll
+C:\Users\Marko\Documents\Visual Studio 2015\Projects\OsaulenkoEgor_Diceus_Test\OsaulenkoEgor_Diceus_Test.UTests\obj\Debug\OsaulenkoEgor_Diceus_Test.UTests.pdb
