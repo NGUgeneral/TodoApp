@@ -1,4 +1,6 @@
 # TodoApp
+<b>TLDR: I keep it as an example of visuals for WPF with Windows 8 style;</b>
+
 Simple Todo App with Saving the state of objects via Serialization
 
 The App uses MVVM architecture. During the work with app - user manipulates with only one object Todo (which is a task). The Todo's are stored in a AppSession in a form of a list.
